@@ -1,0 +1,59 @@
+<nav
+  class="fixed w-full text-white transition-all duration-300 shadow bg-emerald-900"
+>
+  <div
+    class="relative container mx-auto px-6 flex justify-between items-center transition-all duration-300 z-50 bg-emerald-900"
+    [class.py-4]="!isScrolled"
+    [class.py-2]="isScrolled"
+    [class.h-16]="!isScrolled"
+    [class.h-12]="isScrolled"
+  >
+    <!-- Logo -->
+    <a href="/" class="text-2xl font-bold tracking-wide"> Native Planet </a>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-6">
+      <a href="#" class="hover:text-emerald-400">Home</a>
+      <a href="#about" class="hover:text-emerald-400">About</a>
+      <a href="#services" class="hover:text-emerald-400">Services</a>
+      <a href="#contact" class="hover:text-emerald-400">Contact</a>
+    </div>
+
+    <!-- Hamburger Button for Mobile -->
+    <button
+      id="menuButton"
+      class="md:hidden focus:outline-none"
+      (click)="toggleMenu()"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"
+        />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobileMenu"
+    class="md:hidden bg-emerald-50 z-40 text-emerald-900 absolute top-full left-0 w-full shadow-lg transform transition-transform duration-300"
+    [class.translate-y-0]="isMenuOpen"
+    [class.-translate-y-full]="!isMenuOpen"
+  >
+    <div class="container mx-auto px-6 py-4 space-y-4">
+      <a href="#" class="block hover:text-emerald-400">Home</a>
+      <a href="#about" class="block hover:text-emerald-400">About</a>
+      <a href="#services" class="block hover:text-emerald-400">Services</a>
+      <a href="#contact" class="block hover:text-emerald-400">Contact</a>
+    </div>
+  </div>
+</nav>
