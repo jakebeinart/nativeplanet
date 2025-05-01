@@ -1,8 +1,6 @@
-<nav
-  class="fixed w-full text-white transition-all duration-300 shadow bg-forest"
->
+<nav class="fixed w-full text-white transition-all duration-300 shadow bg-main">
   <div
-    class="relative container mx-auto px-6 flex justify-between items-center transition-all duration-300 z-50 bg-forest"
+    class="relative container mx-auto px-6 flex justify-between items-center transition-all duration-300 z-50 bg-main"
     [class.py-4]="!isScrolled"
     [class.py-2]="isScrolled"
     [class.h-16]="!isScrolled"
@@ -20,7 +18,7 @@
     </div>
 
     <button
-      class="cursor-pointer transition-all duration-300 inline-block bg-white text-forest py-2 px-4 rounded-lg shadow hover:bg-emerald-600 hover:text-white transition duration-300"
+      class="cursor-pointer transition-all duration-300 md:inline-block hidden bg-white text-main py-2 px-4 rounded-lg shadow hover:bg-emerald-600 hover:text-white"
       [class.py-2]="!isScrolled"
       [class.py-1]="isScrolled"
     >
