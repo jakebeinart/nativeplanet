@@ -1,8 +1,12 @@
 import { Component, HostListener } from '@angular/core';
+import { NgIcon, provideIcons } from '@ng-icons/core';
+import { heroBars3 } from '@ng-icons/heroicons/outline';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
+  imports: [NgIcon],
+  providers: [provideIcons({ heroBars3 })],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })

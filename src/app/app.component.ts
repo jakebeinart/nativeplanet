@@ -1,11 +1,21 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
-
+import { NgIcon, provideIcons } from '@ng-icons/core';
+import {
+  heroArrowPath,
+  heroBars3,
+  heroGlobeAmericas,
+  heroWrench,
+} from '@ng-icons/heroicons/outline';
+import { FooterComponent } from './components/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent],
+  providers: [
+    provideIcons({ heroWrench, heroGlobeAmericas, heroArrowPath, heroBars3 }),
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
