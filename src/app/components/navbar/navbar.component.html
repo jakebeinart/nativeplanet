@@ -12,20 +12,21 @@
     <a href="/" class="text-2xl font-bold tracking-wide"> Native Planet </a>
 
     <!-- Desktop Menu -->
-    <div class="hidden md:flex space-x-6 font-bold">
-      <a href="#" class="hover:text-emerald-400">HOME</a>
-      <a href="#about" class="hover:text-emerald-400">ABOUT</a>
-      <a href="#services" class="hover:text-emerald-400">SERVICES</a>
+    <div class="hidden md:flex font-bold">
+      <a href="#" class="hover:text-emerald-400 mr-6">HOME</a>
+      <a href="#about" class="hover:text-emerald-400 mr-6">ABOUT</a>
+      <a href="#services" class="hover:text-emerald-400 mr-6">SERVICES</a>
       <a href="#contact" class="hover:text-emerald-400">CONTACT</a>
     </div>
 
-    <button
+    <a
       class="cursor-pointer transition-all duration-300 md:inline-block hidden bg-white text-main py-2 px-4 rounded-lg shadow hover:bg-emerald-600 hover:text-white"
       [class.py-2]="!isScrolled"
       [class.py-1]="isScrolled"
+      href="#contact"
     >
       Get in Touch
-    </button>
+    </a>
 
     <!-- Hamburger Button for Mobile -->
     <button
@@ -44,10 +45,10 @@
     [class.translate-y-0]="isMenuOpen"
     [class.-translate-y-full]="!isMenuOpen"
   >
-    <div class="container mx-auto px-6 py-4 space-y-4">
-      <a href="#" class="block hover:text-emerald-400">Home</a>
-      <a href="#about" class="block hover:text-emerald-400">About</a>
-      <a href="#services" class="block hover:text-emerald-400">Services</a>
+    <div class="container mx-auto px-6 py-4">
+      <a href="#" class="block hover:text-emerald-400 mb-4">Home</a>
+      <a href="#about" class="block hover:text-emerald-400 mb-4">About</a>
+      <a href="#services" class="block hover:text-emerald-400 mb-4">Services</a>
       <a href="#contact" class="block hover:text-emerald-400">Contact</a>
     </div>
   </div>
