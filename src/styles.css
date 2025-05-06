@@ -2,5 +2,6 @@
 
 @theme {
   --color-main: #003f3a;
-  --color-accent: #d700e9;
+  /* --color-accent: #d700e9; */
+  --color-accent: #e2639c;
 }

@@ -84,7 +84,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://jakebeinart.github.io/nativeplanet/"
+            "cname": "nativeplanetstl.com"
           }
         }
       }

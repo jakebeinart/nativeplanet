@@ -14,8 +14,8 @@
 
       <div class="mt-8 flex justify-center">
         <img
-          src="https://picsum.photos/id/106/1000/500"
-          alt="About Native Planet"
+          src="images/cover.webp"
+          alt="Native Plant Garden Example"
           class="rounded-lg shadow-lg w-full"
         />
       </div>
@@ -61,28 +61,46 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-16 bg-white">
-    <div class="container mx-auto px-6 text-center">
-      <h3 class="text-3xl font-bold text-gray-800">
-        THE MAN WITH THE PLAN<span class="text-gray-300">TS</span>
-      </h3>
-      <p class="mt-4 text-gray-600 text-lg">
-        With degrees in biology & horticulture, you could say that native plants
-        have been a life-long passion for Nick Ciaramitaro. After graduating
-        from Mizzou and turning down a full-ride to law school, Nick realized
-        his true passion was in conservation and spent the next few years
-        pursuing that dream leading conservation and emergency response teams
-        for Americorps St. Louis. After spending a few more years in the
-        landscaping industry, Nick decided to take the leap and start Native
-        Planet to spread his passion for native plants all around the St. Louis
-        area.
-      </p>
-      <!-- <p class="mt-4 text-gray-600 text-lg">
-        At Native Planet, we focus on creating eco-friendly landscapes using
-        native plants and sustainable practices. Our mission is to enhance the
-        beauty of your property while supporting local ecosystems.
-      </p> -->
+  <section id="about" class="bg-white py-16 md:py-24">
+    <div class="container mx-auto px-6">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center"
+      >
+        <!-- Column 1: Bio Text -->
+        <div class="text-gray-700 order-2 md:order-1">
+          <h3 class="text-3xl font-bold text-gray-800 mb-6">
+            THE MAN WITH THE PLAN<span class="text-gray-400">TS</span>
+          </h3>
+          <p class="text-lg leading-relaxed mb-4">
+            Nick Ciaramitaro isn't just the founder of Native Planet; he's a
+            lifelong advocate for the natural world, armed with degrees in
+            Biology and Horticulture. His dedication runs so deep that after
+            graduation, he made the pivotal decision to turn down a full-ride to
+            law school to chase his true passion: conservation.
+          </p>
+          <p class="text-lg leading-relaxed mb-4">
+            Nick dove headfirst into making a difference, leading critical
+            conservation and emergency response teams with Americorps St. Louis.
+            After further honing his skills in the landscaping industry, he saw
+            a unique opportunity.
+          </p>
+          <p class="text-lg leading-relaxed">
+            He founded Native Planet to channel his expertise and infectious
+            enthusiasm into transforming St. Louis landscapes, one beautiful,
+            sustainable, native plant at a time.
+          </p>
+        </div>
+
+        <!-- Column 2: Photo -->
+        <div class="order-1 md:order-2">
+          <img
+            src="images/bio.webp"
+            alt="Photo of Nick Ciaramitaro, Founder of Native Planet"
+            class="w-full max-w-md mx-auto md:max-w-full h-auto rounded-lg shadow-lg object-cover"
+            style="aspect-ratio: 1/1"
+          />
+        </div>
+      </div>
     </div>
   </section>
 
@@ -97,21 +115,8 @@
       <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Service 1 -->
         <div class="bg-white p-6 rounded-lg shadow-lg">
-          <div class="flex justify-center">
-            <svg
-              class="h-12 w-12 text-emerald-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 10h11m-4 4H3m5-8h6m-6 0a2 2 0 100 4m-2-4a2 2 0 110 4"
-              />
-            </svg>
+          <div class="flex justify-center text-emerald-600 text-3xl">
+            <ng-icon name="heroSparkles"></ng-icon>
           </div>
           <h4 class="text-xl font-bold mt-4">Native Plant Landscaping</h4>
           <p class="mt-2 text-gray-600">
@@ -122,21 +127,8 @@
 
         <!-- Service 2 -->
         <div class="bg-white p-6 rounded-lg shadow-lg">
-          <div class="flex justify-center">
-            <svg
-              class="h-12 w-12 text-emerald-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 10h16M4 14h16M4 18h16"
-              />
-            </svg>
+          <div class="flex justify-center text-emerald-600 text-3xl">
+            <ng-icon name="heroArrowUp"></ng-icon>
           </div>
           <h4 class="text-xl font-bold mt-4">Eco-Friendly Maintenance</h4>
           <p class="mt-2 text-gray-600">
@@ -146,21 +138,8 @@
 
         <!-- Service 3 -->
         <div class="bg-white p-6 rounded-lg shadow-lg">
-          <div class="flex justify-center">
-            <svg
-              class="h-12 w-12 text-emerald-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 4v16m8-8H4"
-              />
-            </svg>
+          <div class="flex justify-center text-emerald-600 text-3xl">
+            <ng-icon name="heroPaintBrush"></ng-icon>
           </div>
           <h4 class="text-xl font-bold mt-4">Custom Design</h4>
           <p class="mt-2 text-gray-600">
@@ -191,6 +170,7 @@
         </a>
 
         <!-- Phone -->
+        @if(false){
         <a
           href="tel:+1234567890"
           class="flex items-center space-x-2 text-emerald-500 hover:text-emerald-600"
@@ -198,6 +178,7 @@
           <ng-icon name="heroPhone"></ng-icon>
           <span>Call Us</span>
         </a>
+        }
       </div>
     </div>
   </section>
