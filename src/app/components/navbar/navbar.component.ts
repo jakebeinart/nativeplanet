@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { heroBars3 } from '@ng-icons/heroicons/outline';
 
@@ -19,6 +19,8 @@ export class NavbarComponent {
     { name: 'Contact', path: '/contact' },
     { name: 'Services', path: '/services' },
   ];
+  // Use ViewChild to get a reference to the navbar element
+  @ViewChild('navbar', { static: true }) navbar!: ElementRef;
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -28,5 +30,16 @@ export class NavbarComponent {
   onWindowScroll() {
     // Set `isScrolled` to true if the page is scrolled down at least 50px
     this.isScrolled = window.scrollY > 50;
+  }
+
+  // Listen for clicks anywhere on the document
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: Event) {
+    const targetElement = event.target as HTMLElement;
+
+    // Check if the clicked element is outside the navbar element
+    if (this.navbar && !this.navbar.nativeElement.contains(targetElement)) {
+      this.isMenuOpen = false; // Close the menu
+    }
   }
 }
