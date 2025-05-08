@@ -20,18 +20,19 @@
       <a href="#contact" class="hover:text-emerald-400">CONTACT</a>
     </div>
 
-    <a
+    <button
       class="cursor-pointer transition-all duration-300 md:inline-block hidden bg-white text-main py-2 px-4 rounded-lg shadow hover:bg-emerald-600 hover:text-white"
       [class.py-2]="!isScrolled"
       [class.py-1]="isScrolled"
       href="#contact"
     >
       Get in Touch
-    </a>
+    </button>
 
     <!-- Hamburger Button for Mobile -->
     <button
       id="menuButton"
+      aria-label="Open Menu Button"
       class="md:hidden focus:outline-none text-white text-3xl flex self-center"
       (click)="toggleMenu()"
     >
