@@ -3,9 +3,9 @@
   <section class="bg-main py-16 mt-[64px]">
     <div class="container mx-auto px-16 text-center">
       <div class="w-full lg:w-1/2 mx-auto">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-accent capitalize">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-accent capitalize">
           TRANSFORM YOUR LANDSCAPE, NATURALLY
-        </h2>
+        </h1>
         <p class="mt-4 text-white text-xl">
           Native Planet specializes in sustainable landscaping solutions
           tailored to St. Louis. Let us bring your outdoor spaces to life.
@@ -26,7 +26,7 @@
           <div class="flex justify-center text-4xl text-accent">
             <ng-icon class="" name="heroWrench"></ng-icon>
           </div>
-          <h4 class="text-xl text-accent font-bold mt-4">LESS MAINTENANCE</h4>
+          <h2 class="text-xl text-accent font-bold mt-4">LESS MAINTENANCE</h2>
           <p class="mt-2 text-white">
             Native plants require less watering, fertilizing, and pest control,
             which saves you time and money.
@@ -38,7 +38,7 @@
           <div class="flex justify-center text-4xl text-accent">
             <ng-icon class="" name="heroGlobeAmericas"></ng-icon>
           </div>
-          <h4 class="text-xl text-accent font-bold mt-4">SUPPORT WILDLIFE</h4>
+          <h2 class="text-xl text-accent font-bold mt-4">SUPPORT WILDLIFE</h2>
           <p class="mt-2 text-white">
             Native plants provide food, shelter, and breeding grounds for local
             wildlife, like birds, butterflies, bees, and other pollinators.
@@ -50,7 +50,7 @@
           <div class="flex justify-center text-4xl text-accent">
             <ng-icon class="" name="heroArrowPath"></ng-icon>
           </div>
-          <h4 class="text-xl font-bold mt-4 text-accent">SUSTAINABILITY</h4>
+          <h2 class="text-xl font-bold mt-4 text-accent">SUSTAINABILITY</h2>
           <p class="mt-2 text-white">
             Native plants are naturally adapted to the local environment,
             meaning they require less water and are more resilient against local
@@ -68,9 +68,9 @@
       >
         <!-- Column 1: Bio Text -->
         <div class="text-gray-700 order-2 md:order-1">
-          <h3 class="text-3xl font-bold text-gray-800 mb-6">
+          <h1 class="text-3xl font-bold text-gray-800 mb-6">
             THE MAN WITH THE PLAN<span class="text-gray-400">TS</span>
-          </h3>
+          </h1>
           <p class="text-lg leading-relaxed mb-4">
             Nick Ciaramitaro isn't just the founder of Native Planet; he's a
             lifelong advocate for the natural world, armed with degrees in
@@ -107,7 +107,7 @@
   <!-- Services Section -->
   <section id="services" class="bg-gray-100 py-16">
     <div class="container mx-auto px-6 text-center">
-      <h3 class="text-3xl font-bold text-gray-800">Our Services</h3>
+      <h1 class="text-3xl font-bold text-gray-800">OUR SERVICES</h1>
       <p class="mt-4 text-gray-600 text-lg">
         Explore our range of services designed to meet all your landscaping
         needs.
@@ -118,7 +118,7 @@
           <div class="flex justify-center text-emerald-600 text-3xl">
             <ng-icon name="heroSparkles"></ng-icon>
           </div>
-          <h4 class="text-xl font-bold mt-4">Native Plant Landscaping</h4>
+          <h2 class="text-xl font-bold mt-4">Native Plant Landscaping</h2>
           <p class="mt-2 text-gray-600">
             Enhance your property with plants that thrive in the St. Louis
             climate.
@@ -130,7 +130,7 @@
           <div class="flex justify-center text-emerald-600 text-3xl">
             <ng-icon name="heroArrowUp"></ng-icon>
           </div>
-          <h4 class="text-xl font-bold mt-4">Eco-Friendly Maintenance</h4>
+          <h2 class="text-xl font-bold mt-4">Eco-Friendly Maintenance</h2>
           <p class="mt-2 text-gray-600">
             Sustainable upkeep to keep your landscape beautiful year-round.
           </p>
@@ -141,7 +141,7 @@
           <div class="flex justify-center text-emerald-600 text-3xl">
             <ng-icon name="heroPaintBrush"></ng-icon>
           </div>
-          <h4 class="text-xl font-bold mt-4">Custom Design</h4>
+          <h2 class="text-xl font-bold mt-4">Custom Design</h2>
           <p class="mt-2 text-gray-600">
             Tailored solutions to bring your vision to life.
           </p>
@@ -153,7 +153,7 @@
   <!-- Contact Section -->
   <section id="contact" class="py-16 bg-white">
     <div class="container mx-auto px-6 text-center">
-      <h3 class="text-3xl font-bold text-gray-800">Get in Touch</h3>
+      <h1 class="text-3xl font-bold text-gray-800">GET IN TOUCH</h1>
       <p class="mt-4 text-gray-600 text-lg">
         Have questions or ready to get started? Contact us today!
       </p>
@@ -161,19 +161,20 @@
         class="mt-8 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8"
       >
         <!-- Email -->
-        <a
+        <button
           (click)="openEmailClient()"
-          class="flex items-center space-x-2 text-emerald-500 hover:text-emerald-600 cursor-pointer"
+          aria-label="Email Us"
+          class="flex items-center space-x-2 font-bold text-xl text-main hover:text-emerald-600 cursor-pointer"
         >
           <ng-icon name="heroEnvelope"></ng-icon>
-          <span>Email Us</span>
-        </a>
+          <span>info&#64;nativeplanetstl.com</span>
+        </button>
 
         <!-- Phone -->
         @if(false){
         <a
           href="tel:+1234567890"
-          class="flex items-center space-x-2 text-emerald-500 hover:text-emerald-600"
+          class="flex items-center space-x-2 font-bold text-main hover:text-emerald-600"
         >
           <ng-icon name="heroPhone"></ng-icon>
           <span>Call Us</span>
