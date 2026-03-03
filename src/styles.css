@@ -4,4 +4,98 @@
   --color-main: #003f3a;
   /* --color-accent: #d700e9; */
   --color-accent: #e2639c;
+
+  /*PRIMARY BRAND COLORS*/
+  --color-compost: #25282a;
+  --color-compost-50: #f1f2f3;
+  --color-compost-100: #e4e6e7;
+  --color-compost-200: #c9cdcf;
+  --color-compost-300: #aeb3b7;
+  --color-compost-400: #939a9f;
+  --color-compost-500: #788187;
+  --color-compost-600: #60676c;
+  --color-compost-700: #484d51;
+  --color-compost-800: #303436;
+  --color-compost-900: #181a1b;
+  --color-compost-950: #111213;
+
+  --color-caterpillar: #f99d22;
+  --color-caterpillar-50: #fef4e6;
+  --color-caterpillar-100: #fee9cd;
+  --color-caterpillar-200: #fcd29c;
+  --color-caterpillar-300: #fbbc6a;
+  --color-caterpillar-400: #faa638;
+  --color-caterpillar-500: #f99006;
+  --color-caterpillar-600: #c77305;
+  --color-caterpillar-700: #955604;
+  --color-caterpillar-800: #633903;
+  --color-caterpillar-900: #321d01;
+  --color-caterpillar-950: #231401;
+
+  --color-monarch: #f26728;
+  --color-monarch-50: #feeee7;
+  --color-monarch-100: #fcddcf;
+  --color-monarch-200: #f9bb9f;
+  --color-monarch-300: #f79a6e;
+  --color-monarch-400: #f4783e;
+  --color-monarch-500: #f1560e;
+  --color-monarch-600: #c1450b;
+  --color-monarch-700: #913408;
+  --color-monarch-800: #602206;
+  --color-monarch-900: #301103;
+  --color-monarch-950: #220c02;
+
+  /*SECONDARY BRAND COLORS*/
+  --color-sweetspire: #a4cf60;
+  --color-sweetspire-50: #f4f9eb;
+  --color-sweetspire-100: #e9f3d8;
+  --color-sweetspire-200: #d2e8b0;
+  --color-sweetspire-300: #bcdc89;
+  --color-sweetspire-400: #a6d062;
+  --color-sweetspire-500: #90c43b;
+  --color-sweetspire-600: #739d2f;
+  --color-sweetspire-700: #567623;
+  --color-sweetspire-800: #394f17;
+  --color-sweetspire-900: #1d270c;
+  --color-sweetspire-950: #141b08;
+
+  --color-fern: #6ba542;
+  --color-fern-50: #f1f8ed;
+  --color-fern-100: #e4f0db;
+  --color-fern-200: #c8e2b6;
+  --color-fern-300: #add392;
+  --color-fern-400: #92c56d;
+  --color-fern-500: #76b649;
+  --color-fern-600: #5f923a;
+  --color-fern-700: #476d2c;
+  --color-fern-800: #2f491d;
+  --color-fern-900: #18240f;
+  --color-fern-950: #111a0a;
+
+  /*ACCENT BRAND COLORS*/
+  --color-beebalm: #c896b6;
+  --color-beebalm-50: #f6eef3;
+  --color-beebalm-100: #eddee8;
+  --color-beebalm-200: #dcbcd0;
+  --color-beebalm-300: #ca9bb9;
+  --color-beebalm-400: #b979a1;
+  --color-beebalm-500: #a7588a;
+  --color-beebalm-600: #86466e;
+  --color-beebalm-700: #643553;
+  --color-beebalm-800: #432337;
+  --color-beebalm-900: #21121c;
+  --color-beebalm-950: #170c13;
+
+  --color-coneflower: #b565a8;
+  --color-coneflower-50: #f7eef5;
+  --color-coneflower-100: #eeddeb;
+  --color-coneflower-200: #debad8;
+  --color-coneflower-300: #cd98c4;
+  --color-coneflower-400: #bd75b1;
+  --color-coneflower-500: #ac539d;
+  --color-coneflower-600: #8a427e;
+  --color-coneflower-700: #67325e;
+  --color-coneflower-800: #45213f;
+  --color-coneflower-900: #22111f;
+  --color-coneflower-950: #180c16;
 }
