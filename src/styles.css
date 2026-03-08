@@ -99,3 +99,100 @@
   --color-coneflower-900: #22111f;
   --color-coneflower-950: #180c16;
 }
+
+:root {
+  --font-primary: "Rafaella", serif;
+  --font-secondary: "Euclid Flex", sans-serif;
+  --font-body: "Montserrat-Medium", sans-serif;
+}
+
+/* Apply the body font to the entire body */
+body,
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Apply the primary font to main headings */
+h1,
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+h2,
+h3,
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+@font-face {
+  font-family: "Rafaella"; /* Choose a name for your font */
+  src: url("assets/fonts/Rafaella.otf") format("opentype"); /* Adjust the path and filename as needed */
+  /* Add font-weight and font-style if the file represents a specific weight/style */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Flex"; /* Choose a name for your font */
+  src: url("assets/fonts/Euclid\ Flex.ttf") format("truetype"); /* Adjust the path and filename as needed */
+  /* Add font-weight and font-style if the file represents a specific weight/style */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium"; /* Choose a name for your font */
+  src: url("assets/fonts/Montserrat-Medium.ttf") format("truetype"); /* Adjust the path and filename as needed */
+  /* Add font-weight and font-style if the file represents a specific weight/style */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bg-stars {
+  background: url("/images/stars.webp") no-repeat center center / cover;
+}
+
+.bg-plants {
+  /* background: url("/images/plantpattern.webp") no-repeat center center / cover; */
+  background-color: rgba(0, 0, 0, 0.3); /* The black overlay color */
+  background-image: url("/images/plantpattern.webp");
+  background-blend-mode: darken; /* Blends the color and image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.beebalm-icon {
+  background-image: url("/images/flowers/beebalm.svg");
+  background-repeat: no-repeat;
+}
+
+.blazingstar-icon {
+  background-image: url("/images/flowers/blazingstar.svg");
+  background-repeat: no-repeat;
+}
+
+.coneflower-icon {
+  background-image: url("/images/flowers/coneflower.svg");
+  background-repeat: no-repeat;
+}
+
+.iris-icon {
+  background-image: url("/images/flowers/iris.svg");
+  background-repeat: no-repeat;
+}
+
+.leaf-icon {
+  background-image: url("/images/flowers/leaf.svg");
+  background-repeat: no-repeat;
+}
+
+.milkweed-icon {
+  background-image: url("/images/flowers/milkweed.svg");
+  background-repeat: no-repeat;
+}
+
+.oats-icon {
+  background-image: url("/images/flowers/oats.svg");
+  background-repeat: no-repeat;
+}

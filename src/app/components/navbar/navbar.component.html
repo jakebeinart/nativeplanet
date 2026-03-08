@@ -1,39 +1,45 @@
 <nav
-  class="z-50 fixed w-full text-white transition-all duration-300 shadow bg-main"
+  class="z-50 fixed w-full text-white transition-all duration-300 shadow bg-compost"
   #navbar
 >
   <div
-    class="relative mx-auto px-6 flex justify-between items-center transition-all duration-300 z-50 bg-main w-full"
+    class="relative mx-auto px-6 flex justify-between items-center transition-all duration-300 z-50 bg-compost w-full"
     [class.py-4]="!isScrolled"
     [class.py-2]="isScrolled"
     [class.h-16]="!isScrolled"
     [class.h-12]="isScrolled"
   >
     <!-- Logo -->
-    <a href="/" class="text-2xl font-bold tracking-wide"> Native Planet </a>
+
+    <div
+      class="primary-logo hidden md:block bg-caterpillar transition-all duration-300"
+      [class]="{ 'h-[40px]': !isScrolled, 'h-[34px]': isScrolled }"
+    ></div>
+
+    <div class="logo-mark bg-caterpillar md:hidden"></div>
+    <div class="font-primary md:hidden text-caterpillar">Native Planet</div>
 
     <!-- Desktop Menu -->
-    <div class="hidden md:flex font-bold">
-      <a href="#" class="hover:text-emerald-400 mr-6">HOME</a>
-      <a href="#about" class="hover:text-emerald-400 mr-6">ABOUT</a>
-      <a href="#services" class="hover:text-emerald-400 mr-6">SERVICES</a>
-      <a href="#contact" class="hover:text-emerald-400">CONTACT</a>
+    <div class="hidden md:flex font-bold font-secondary text-caterpillar">
+      <a href="#" class="mr-6 hover:text-monarch">HOME</a>
+      <a href="#about" class="mr-6 hover:text-monarch">ABOUT</a>
+      <a href="#services" class="mr-6 hover:text-monarch">SERVICES</a>
+      <a href="#contact" class="hover:text-monarch">CONTACT</a>
     </div>
 
     <button
-      class="cursor-pointer transition-all duration-300 md:inline-block hidden bg-white text-main py-2 px-4 rounded-lg shadow hover:bg-emerald-600 hover:text-white"
+      class="cursor-pointer transition-all duration-300 md:inline-block hidden bg-caterpillar text-white py-2 px-4 rounded-lg shadow hover:bg-monarch"
       [class.py-2]="!isScrolled"
       [class.py-1]="isScrolled"
-      href="#contact"
     >
-      Get in Touch
+      <a href="#contact">Get in Touch</a>
     </button>
 
     <!-- Hamburger Button for Mobile -->
     <button
       id="menuButton"
       aria-label="Open Menu Button"
-      class="md:hidden focus:outline-none text-white text-3xl flex self-center"
+      class="md:hidden focus:outline-none text-caterpillar text-3xl flex self-center"
       (click)="toggleMenu()"
     >
       <ng-icon name="heroBars3"></ng-icon>
@@ -43,15 +49,15 @@
   <!-- Mobile Menu -->
   <div
     id="mobileMenu"
-    class="md:hidden bg-emerald-50 z-40 text-emerald-900 absolute top-full left-0 w-full shadow-lg transform transition-transform duration-300"
+    class="md:hidden bg-compost-900 z-40 text-white absolute top-full left-0 w-full shadow-lg transform transition-transform duration-300"
     [class.translate-y-0]="isMenuOpen"
     [class.-translate-y-full]="!isMenuOpen"
   >
     <div class="container mx-auto px-6 py-4">
-      <a href="#" class="block hover:text-emerald-400 mb-4">Home</a>
-      <a href="#about" class="block hover:text-emerald-400 mb-4">About</a>
-      <a href="#services" class="block hover:text-emerald-400 mb-4">Services</a>
-      <a href="#contact" class="block hover:text-emerald-400">Contact</a>
+      <a href="#" class="block hover:text-fern mb-4">Home</a>
+      <a href="#about" class="block hover:text-fern mb-4">About</a>
+      <a href="#services" class="block hover:text-fern mb-4">Services</a>
+      <a href="#contact" class="block hover:text-fern">Contact</a>
     </div>
   </div>
 </nav>

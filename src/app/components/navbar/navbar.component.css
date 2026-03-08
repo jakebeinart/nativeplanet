@@ -1,0 +1,12 @@
+.primary-logo {
+  mask-image: url("/images/logos/primary_logo.svg");
+  mask-repeat: no-repeat;
+  width: 175px;
+}
+
+.logo-mark {
+  mask-image: url("/images/logos/logo_mark.svg");
+  mask-repeat: no-repeat;
+  width: 30px;
+  height: 26.7px;
+}
