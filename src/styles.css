@@ -130,6 +130,7 @@ h3,
   /* Add font-weight and font-style if the file represents a specific weight/style */
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -138,6 +139,7 @@ h3,
   /* Add font-weight and font-style if the file represents a specific weight/style */
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -146,6 +148,7 @@ h3,
   /* Add font-weight and font-style if the file represents a specific weight/style */
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .bg-stars {
